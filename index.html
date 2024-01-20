@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Tea house landing page.</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- remix icon cdn -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'heading-color': '#1C1C1C',
+                'p-tag':'#777'
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-   
+<body class="font-manrope">
+    <header class="container mx-auto p-7">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div class="">
+            <img src="/images/banner.png" class="max-w-lg flex" />
+            <div class="flex justify-center gap-3 w-52 pt-5 pr-5 drop-shadow-lg items-center rounded-md -mt-24 bg-white">
+              <i class="ri-star-fill text-2xl text-amber-400"></i>
+              <div>
+                <h4 class="text-2xl font-extrabold text-heading-color">5.00</h4>
+                <p class="text-p-tag">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-7xl font-extrabold text-heading-color ">
+              It's good <br>
+              tea time at The <br>
+              Tea House</h1>
+            <p class="py-6 text-p-tag font-medium text-lg w-[50%]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+        </div>
+      </div>
+    </header>
+   <main>
+
+   </main>
+   <footer>
+
+   </footer>
 </body>
 </html>
